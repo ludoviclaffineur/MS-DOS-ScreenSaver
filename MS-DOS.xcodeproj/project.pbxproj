@@ -7,15 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE422AD71B3AA92300DFDD0E /* Action.h in Headers */ = {isa = PBXBuildFile; fileRef = FE422AD51B3AA92300DFDD0E /* Action.h */; };
+		FE422ADA1B3AAD7C00DFDD0E /* Action.m in Sources */ = {isa = PBXBuildFile; fileRef = FE422AD91B3AAD7C00DFDD0E /* Action.m */; };
+		FE422ADD1B3AB09900DFDD0E /* ActionTimeToWait.h in Headers */ = {isa = PBXBuildFile; fileRef = FE422ADB1B3AB09900DFDD0E /* ActionTimeToWait.h */; };
+		FE422ADE1B3AB09900DFDD0E /* ActionTimeToWait.m in Sources */ = {isa = PBXBuildFile; fileRef = FE422ADC1B3AB09900DFDD0E /* ActionTimeToWait.m */; };
+		FE7507D31B397FA800EE4DFF /* Screen.h in Headers */ = {isa = PBXBuildFile; fileRef = FE7507D21B397FA800EE4DFF /* Screen.h */; };
+		FE7507D51B397FEA00EE4DFF /* Screen.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7507D41B397FEA00EE4DFF /* Screen.m */; };
+		FE7507DC1B399A3C00EE4DFF /* ActionLetters.h in Headers */ = {isa = PBXBuildFile; fileRef = FE7507D81B399A3C00EE4DFF /* ActionLetters.h */; };
+		FE7507DD1B399A3C00EE4DFF /* ActionLetters.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7507D91B399A3C00EE4DFF /* ActionLetters.m */; };
 		FE84CDFD1B39444F002F8B16 /* MS_DOSView.h in Headers */ = {isa = PBXBuildFile; fileRef = FE84CDFC1B39444F002F8B16 /* MS_DOSView.h */; };
 		FE84CDFF1B39444F002F8B16 /* MS_DOSView.m in Sources */ = {isa = PBXBuildFile; fileRef = FE84CDFE1B39444F002F8B16 /* MS_DOSView.m */; };
+		FE84CE071B39546A002F8B16 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FE84CE061B39546A002F8B16 /* libxml2.dylib */; };
+		FE84CE091B395D13002F8B16 /* ms_dos-config.xml in Resources */ = {isa = PBXBuildFile; fileRef = FE84CE081B395D13002F8B16 /* ms_dos-config.xml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FE422AD51B3AA92300DFDD0E /* Action.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Action.h; sourceTree = "<group>"; };
+		FE422AD91B3AAD7C00DFDD0E /* Action.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Action.m; sourceTree = "<group>"; };
+		FE422ADB1B3AB09900DFDD0E /* ActionTimeToWait.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionTimeToWait.h; sourceTree = "<group>"; };
+		FE422ADC1B3AB09900DFDD0E /* ActionTimeToWait.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionTimeToWait.m; sourceTree = "<group>"; };
+		FE7507D21B397FA800EE4DFF /* Screen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Screen.h; sourceTree = "<group>"; };
+		FE7507D41B397FEA00EE4DFF /* Screen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Screen.m; sourceTree = "<group>"; };
+		FE7507D81B399A3C00EE4DFF /* ActionLetters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionLetters.h; sourceTree = "<group>"; };
+		FE7507D91B399A3C00EE4DFF /* ActionLetters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionLetters.m; sourceTree = "<group>"; };
 		FE84CDF71B39444F002F8B16 /* MS-DOS.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MS-DOS.saver"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE84CDFB1B39444F002F8B16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE84CDFC1B39444F002F8B16 /* MS_DOSView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MS_DOSView.h; sourceTree = "<group>"; };
 		FE84CDFE1B39444F002F8B16 /* MS_DOSView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MS_DOSView.m; sourceTree = "<group>"; };
+		FE84CE061B39546A002F8B16 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		FE84CE081B395D13002F8B16 /* ms_dos-config.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "ms_dos-config.xml"; path = "MS-DOS/ms_dos-config.xml"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -23,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE84CE071B39546A002F8B16 /* libxml2.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,8 +53,10 @@
 		FE84CDED1B39444F002F8B16 = {
 			isa = PBXGroup;
 			children = (
+				FE84CE061B39546A002F8B16 /* libxml2.dylib */,
 				FE84CDF91B39444F002F8B16 /* MS-DOS */,
 				FE84CDF81B39444F002F8B16 /* Products */,
+				FE84CE081B395D13002F8B16 /* ms_dos-config.xml */,
 			);
 			sourceTree = "<group>";
 		};
@@ -50,6 +73,14 @@
 			children = (
 				FE84CDFC1B39444F002F8B16 /* MS_DOSView.h */,
 				FE84CDFE1B39444F002F8B16 /* MS_DOSView.m */,
+				FE7507D21B397FA800EE4DFF /* Screen.h */,
+				FE7507D41B397FEA00EE4DFF /* Screen.m */,
+				FE422AD51B3AA92300DFDD0E /* Action.h */,
+				FE422AD91B3AAD7C00DFDD0E /* Action.m */,
+				FE7507D81B399A3C00EE4DFF /* ActionLetters.h */,
+				FE7507D91B399A3C00EE4DFF /* ActionLetters.m */,
+				FE422ADB1B3AB09900DFDD0E /* ActionTimeToWait.h */,
+				FE422ADC1B3AB09900DFDD0E /* ActionTimeToWait.m */,
 				FE84CDFA1B39444F002F8B16 /* Supporting Files */,
 			);
 			path = "MS-DOS";
@@ -70,7 +101,11 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE422AD71B3AA92300DFDD0E /* Action.h in Headers */,
+				FE7507D31B397FA800EE4DFF /* Screen.h in Headers */,
 				FE84CDFD1B39444F002F8B16 /* MS_DOSView.h in Headers */,
+				FE7507DC1B399A3C00EE4DFF /* ActionLetters.h in Headers */,
+				FE422ADD1B3AB09900DFDD0E /* ActionTimeToWait.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +120,7 @@
 				FE84CDF31B39444F002F8B16 /* Frameworks */,
 				FE84CDF41B39444F002F8B16 /* Headers */,
 				FE84CDF51B39444F002F8B16 /* Resources */,
+				FE84CE051B3945FF002F8B16 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -131,17 +167,38 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE84CE091B395D13002F8B16 /* ms_dos-config.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FE84CE051B3945FF002F8B16 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cp -r /Users/ludoviclaffineur/Library/Developer/Xcode/DerivedData/MS-DOS-evfjvjzibuszcffbwntviinsrzre/Build/Products/Debug/MS-DOS.saver ~/Library/Screen\\ Savers/";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FE84CDF21B39444F002F8B16 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE7507DD1B399A3C00EE4DFF /* ActionLetters.m in Sources */,
+				FE422ADA1B3AAD7C00DFDD0E /* Action.m in Sources */,
 				FE84CDFF1B39444F002F8B16 /* MS_DOSView.m in Sources */,
+				FE7507D51B397FEA00EE4DFF /* Screen.m in Sources */,
+				FE422ADE1B3AB09900DFDD0E /* ActionTimeToWait.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,6 +240,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/include/libxml2/,
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -219,6 +281,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/include/libxml2/,
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
@@ -266,6 +333,7 @@
 				FE84CE041B39444F002F8B16 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

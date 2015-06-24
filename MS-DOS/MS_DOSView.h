@@ -7,7 +7,13 @@
 //
 
 #import <ScreenSaver/ScreenSaver.h>
+#import <libxml/tree.h>
+#include <libxml/parser.h>
+#include <libxml/tree.h>
+#import "Screen.h"
 
-@interface MS_DOSView : ScreenSaverView
-
+@interface MS_DOSView : ScreenSaverView{
+    Screen* screen;
+}
+- (void) getNextCommand;
 @end
