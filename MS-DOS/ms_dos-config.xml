@@ -1,50 +1,80 @@
 <text>
+    <cursor type="hidden" />
     <clearscreen />
     <timetowait delay="15" />
-    <letters tblMin="0" tblMax="0" cursor="hidden">192 KB OK</letters>
+    <letters tblMin="0" tblMax="0">192 KB OK</letters>
     <timetowait delay="15" />
     <clearscreen />
-    <letters tblMin="0" tblMax="0" cursor="hidden">256 KB OK</letters>
+    <letters tblMin="0" tblMax="0">256 KB OK</letters>
     <timetowait delay="15" />
     <clearscreen />
-    <letters tblMin="0" tblMax="0" cursor="hidden">320 KB OK</letters>
+    <letters tblMin="0" tblMax="0">320 KB OK</letters>
     <timetowait delay="15" />
     <clearscreen />
-    <letters tblMin="0" tblMax="0" cursor="hidden">384 KB OK</letters>
+    <letters tblMin="0" tblMax="0">384 KB OK</letters>
     <timetowait delay="15" />
     <clearscreen />
-    <letters tblMin="0" tblMax="0" cursor="hidden">448 KB OK</letters>
+    <letters tblMin="0" tblMax="0">448 KB OK</letters>
     <timetowait delay="15" />
     <clearscreen />
-    <letters tblMin="0" tblMax="0" cursor="hidden">512 KB OK</letters>
+    <letters tblMin="0" tblMax="0">512 KB OK</letters>
     <timetowait delay="15" />
     <clearscreen />
-    <letters tblMin="0" tblMax="0" cursor="hidden">576 KB OK</letters>
+    <letters tblMin="0" tblMax="0">576 KB OK</letters>
     <timetowait delay="15" />
     <clearscreen />
-    <letters tblMin="0" tblMax="0" cursor="hidden">640 KB OK</letters>
+    <letters tblMin="0" tblMax="0">640 KB OK</letters>
     <timetowait delay="1" />
     <clearscreen />
-    <letters tblMin="0" tblMax="1" cursor="hidden">Toaster-BIOS v1.3.02.P0100137 3/25/94 rev A-A1</letters><crlf />
-    <timetowait delay="2" />
-    <letters tblMin="0" tblMax="0" cursor="fixed">Copyright(c)BSI</letters><crlf />
+    <letters tblMin="0" tblMax="0">Toaster-BIOS v1.3.02.P0100137 3/25/94 rev A-A1</letters><crlf />
+    <timetowait delay="10" />
+    <letters tblMin="0" tblMax="0">Copyright(c)BSI</letters><crlf />
     <crlf />
-    <timetowait delay="40" />
-    <letters tblMin="0" tblMax="0" cursor="fixed">AfterDark DOS Shell Version 2.7(Mac)</letters><crlf />
+    <timetowait delay="10" />
+    <letters tblMin="0" tblMax="0">AfterDark DOS Shell Version 2.7(Mac)</letters><crlf />
     <timetowait delay="5" />
-    <letters tblMin="0" tblMax="0" cursor="blinking">Copyright(c) 1993.94 Berkeley Systems. Inc. All Rights Reserved.</letters><crlf />
+    <letters tblMin="0" tblMax="0">Copyright(c) 1993.94 Berkeley Systems. Inc. All Rights Reserved.</letters><crlf />
     <timetowait delay="9" />
-    <letters tblMin="0" tblMax="0" cursor="blinking">Welcome to AD-DOS.</letters><crlf />
-    <timetowait delay="40" />
-    <letters tblMin="0" tblMax="1" cursor="blinking">C:\></letters>
-    <timetowait delay="90" />
-    <letters tblMin="4" tblMax="9" cursor="blinking">COPY COMMAND.COM COPY.COM</letters><crlf />
+    <letters tblMin="0" tblMax="0">Welcome to AD-DOS.</letters><crlf />
+    <timetowait delay="6" />
+    <letters tblMin="0" tblMax="0">C:\></letters><cursor type="blinking" />
+    <timetowait delay="20" />
+    <letters tblMin="4" tblMax="10">COPY COMMAND.COM COPY.COM</letters><crlf />
     <crlf />
-    <letters tblMin="1" tblMax="1" cursor="hiden">          1 file(s) copied</letters><crlf />
+    <letters tblMin="0" tblMax="0">              1 file(s) copied</letters><crlf />
     <crlf />
-    <letters tblMin="1" tblMax="1" cursor="blinking">C:\></letters><crlf />
+    <timetowait delay="6" />
+    <letters tblMin="0" tblMax="0">C:\></letters><cursor type="blinking" />
+    <timetowait delay="20" />
+    <letters tblMin="4" tblMax="10">DATE</letters><crlf />
+    <crlf />
+    <letters tblMin="0" tblMax="0">Current date is </letters><date /><crlf />
+    <crlf />
+    <timetowait delay="6" />
+    <letters tblMin="0" tblMax="0">C:\></letters><cursor type="blinking" />
+    <timetowait delay="20" />
+    <letters tblMin="4" tblMax="10">TIME</letters><crlf />
+    <crlf />
+    <letters tblMin="0" tblMax="0">Current time is </letters><time /><crlf />
+    <crlf />
+    <timetowait delay="6" />
+    <letters tblMin="0" tblMax="0">C:\></letters><cursor type="blinking" />
+    <timetowait delay="20" />
+    <letters tblMin="4" tblMax="10">TIME</letters><crlf />
+    <crlf />
+    <letters tblMin="0" tblMax="0">Current time is </letters><time /><crlf />
+    <crlf />
+    <timetowait delay="6" />
+    <letters tblMin="0" tblMax="0">C:\></letters><cursor type="blinking" />
+    <timetowait delay="20" />
+    <letters tblMin="4" tblMax="10">TIME</letters><timetowait delay="10" />
+    <delete number="1" /><timetowait delay="10" /><delete number="1" /><timetowait delay="10" /><delete number="1" /><timetowait delay="10" /><delete number="1" /><timetowait delay="10" />
+    <letters tblMin="4" tblMax="10">DATE</letters><timetowait delay="10" /><crlf />
+    <crlf /><timetowait delay="1" />
+    <letters tblMin="0" tblMax="0">Current date is </letters><time /><crlf />
+    <crlf /><timetowait delay="1" />
+    <letters tblMin="0" tblMax="0">C:\></letters><cursor type="fixed" />
+    <letters tblMin="6" tblMax="15">REBOOT</letters><timetowait delay="10" /><crlf />
     <timetowait delay="30" />
     <loop />
-
-
 </text>

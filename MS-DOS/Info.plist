@@ -24,5 +24,11 @@
 	<string>Copyright © 2015 Ludovic Laffineur. All rights reserved.</string>
 	<key>NSPrincipalClass</key>
 	<string>MS_DOSView</string>
+	<key>ATSApplicationFontsPath</key>
+	<string>./</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Glass_TTY_VT220.ttf</string>
+	</array>
 </dict>
 </plist>

@@ -10,6 +10,7 @@
 #import "Action.h"
 #import "ActionLetters.h"
 #import "ActionTimeToWait.h"
+#import "ActionTime.h"
 
 @implementation MS_DOSView{
     xmlDocPtr doc;
@@ -18,16 +19,19 @@
     Action* currentAction;
     int currentCursorState, timeBlinking;
     BOOL blinking;
+    NSString *thepath;
 }
 
 - (instancetype)initWithFrame:(NSRect)frame isPreview:(BOOL)isPreview
 {
     self = [super initWithFrame:frame isPreview:isPreview];
     if (self) {
-        [self loadConfigWithXml:"/Users/ludoviclaffineur/Documents/MS-DOS/MS-DOS/ms_dos-config.xml"];
-        [self setAnimationTimeInterval:1/60.0];
+
+        [self loadConfigWithXml:"/Library/Screen Savers/MS-DOS.saver/Contents/Resources/ms_dos-config.xml"];
+        [self setAnimationTimeInterval:1/30.0];
         currentAction = NULL;
         screen = [[Screen alloc ]initWithFrame:frame];
+
         blinking = NO;
         timeBlinking = 0;
     }
@@ -85,13 +89,15 @@
 
 - (void)animateOneFrame
 {
-    [[NSColor blackColor]set];
+   [[NSColor blackColor]set];
     NSRectFill([self bounds]);
+
     NSAttributedString* styleText = nil;
     if(currentAction==NULL || [currentAction isDone]){
         [self getNextCommand];
     }
     [currentAction process:screen];
+
     [self printCursor];
     return;
 }
@@ -136,7 +142,7 @@
     {
         NSString* string = [NSString stringWithFormat:@"%s" , xmlNodeGetContent(current_element) ];
         xmlAttr* attribute = current_element->properties;
-        int tbl_min, tbl_max,cursorState = 0;
+        int tbl_min, tbl_max;
         while(attribute && attribute->name && attribute->children)
         {
             xmlChar* value = xmlNodeListGetString(current_element->doc, attribute->children, 1);
@@ -146,23 +152,12 @@
             else if (strcmp(attribute->name, "tblMax")==0) {
                 tbl_max = atoi(value);
             }
-            else if (strcmp(attribute->name, "cursor")==0) {
-                if (strcmp(value, "hidden")==0) {
-                    cursorState = kHidden;
-                }
-                else if (strcmp(value, "fixed")==0) {
-                    cursorState = kFixed;
-                }
-                else if (strcmp(value, "blinking")==0) {
-                    cursorState = kBlinking;
-                }
-            }
+
             xmlFree(value);
             attribute = attribute->next;
         }
-        currentCursorState = cursorState;
         //[screen addString:[ NSString stringWithFormat:@"%s",attribute->name ]];
-        currentAction = [[ActionLetters alloc] initWithString:string timeBetweenLetterMin:tbl_min timeBetweenLetterMax:tbl_max andCursorState:cursorState];
+        currentAction = [[ActionLetters alloc] initWithString:string timeBetweenLetterMin:tbl_min timeBetweenLetterMax:tbl_max andCursorState:0];
         //
     }
     else if (strcmp(current_element->name, "clearscreen")==0)
@@ -174,6 +169,20 @@
     {
         [screen newLine];
         //[self getNextCommand];
+    }
+    else if (strcmp(current_element->name, "cursor")==0) {
+        xmlAttr* attribute = current_element->properties;
+        xmlChar* value = xmlNodeListGetString(current_element->doc, attribute->children, 1);
+        currentCursorState = 0;
+        if (strcmp(value, "hidden")==0) {
+            currentCursorState = kHidden;
+        }
+        else if (strcmp(value, "fixed")==0) {
+            currentCursorState = kFixed;
+        }
+        else if (strcmp(value, "blinking")==0) {
+            currentCursorState = kBlinking;
+        }
     }
     else if (strcmp(current_element->name, "timetowait")==0)
     {
@@ -193,8 +202,19 @@
     else if (strcmp(current_element->name, "loop")==0)
     {
         [screen clearScreen];
+        
         current_element = root_element->children;
 
+        //[self getNextCommand];
+    }
+    else if (strcmp(current_element->name, "time")==0)
+    {
+        currentAction = [[ActionTime alloc]init];
+        //[self getNextCommand];
+    }
+    else if (strcmp(current_element->name, "delete")==0)
+    {
+        [screen deleteChar];
         //[self getNextCommand];
     }
 

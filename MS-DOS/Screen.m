@@ -44,7 +44,7 @@
 - (void) newLine{
     [linesOnScreen addObject:[[NSMutableString alloc] init]];
     currentLine++;
-    if (currentLine > nbrLineMax) {
+    if (currentLine >= nbrLineMax) {
         [linesOnScreen removeObjectAtIndex:0];
         currentLine = nbrLineMax;
     }
@@ -58,12 +58,14 @@
 - (void) clearScreen{
     [ linesOnScreen removeAllObjects ];
     [ linesOnScreen addObject:[[NSMutableString alloc] init]];
+    currentLine = 0;
 }
 
 - (void) draw{
     NSAttributedString* styleText = nil;
     NSColor* myGreenColor = [NSColor colorWithCalibratedRed:0.066 green:0.99f blue:0.16 alpha:1.0];
     NSMutableDictionary* attribute = [NSMutableDictionary dictionary];
+    
     [attribute setObject:[NSFont fontWithName:@"Glass_TTY_VT220" size:32.0] forKey:NSFontAttributeName];
 
     [attribute setObject:myGreenColor forKey:NSForegroundColorAttributeName];

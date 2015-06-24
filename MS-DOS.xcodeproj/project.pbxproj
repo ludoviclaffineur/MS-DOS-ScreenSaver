@@ -19,6 +19,9 @@
 		FE84CDFF1B39444F002F8B16 /* MS_DOSView.m in Sources */ = {isa = PBXBuildFile; fileRef = FE84CDFE1B39444F002F8B16 /* MS_DOSView.m */; };
 		FE84CE071B39546A002F8B16 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FE84CE061B39546A002F8B16 /* libxml2.dylib */; };
 		FE84CE091B395D13002F8B16 /* ms_dos-config.xml in Resources */ = {isa = PBXBuildFile; fileRef = FE84CE081B395D13002F8B16 /* ms_dos-config.xml */; };
+		FEF0203C1B3AE2B100F0E706 /* Glass_TTY_VT220.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FEF0203B1B3AE29400F0E706 /* Glass_TTY_VT220.ttf */; };
+		FEF020401B3AECB200F0E706 /* ActionTime.h in Headers */ = {isa = PBXBuildFile; fileRef = FEF0203E1B3AECB200F0E706 /* ActionTime.h */; };
+		FEF020411B3AECB200F0E706 /* ActionTime.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF0203F1B3AECB200F0E706 /* ActionTime.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,9 @@
 		FE84CDFE1B39444F002F8B16 /* MS_DOSView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MS_DOSView.m; sourceTree = "<group>"; };
 		FE84CE061B39546A002F8B16 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		FE84CE081B395D13002F8B16 /* ms_dos-config.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "ms_dos-config.xml"; path = "MS-DOS/ms_dos-config.xml"; sourceTree = "<group>"; };
+		FEF0203B1B3AE29400F0E706 /* Glass_TTY_VT220.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Glass_TTY_VT220.ttf; sourceTree = "<group>"; };
+		FEF0203E1B3AECB200F0E706 /* ActionTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionTime.h; sourceTree = "<group>"; };
+		FEF0203F1B3AECB200F0E706 /* ActionTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionTime.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +63,7 @@
 				FE84CDF91B39444F002F8B16 /* MS-DOS */,
 				FE84CDF81B39444F002F8B16 /* Products */,
 				FE84CE081B395D13002F8B16 /* ms_dos-config.xml */,
+				FEF0203B1B3AE29400F0E706 /* Glass_TTY_VT220.ttf */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,6 +88,8 @@
 				FE7507D91B399A3C00EE4DFF /* ActionLetters.m */,
 				FE422ADB1B3AB09900DFDD0E /* ActionTimeToWait.h */,
 				FE422ADC1B3AB09900DFDD0E /* ActionTimeToWait.m */,
+				FEF0203E1B3AECB200F0E706 /* ActionTime.h */,
+				FEF0203F1B3AECB200F0E706 /* ActionTime.m */,
 				FE84CDFA1B39444F002F8B16 /* Supporting Files */,
 			);
 			path = "MS-DOS";
@@ -103,6 +112,7 @@
 			files = (
 				FE422AD71B3AA92300DFDD0E /* Action.h in Headers */,
 				FE7507D31B397FA800EE4DFF /* Screen.h in Headers */,
+				FEF020401B3AECB200F0E706 /* ActionTime.h in Headers */,
 				FE84CDFD1B39444F002F8B16 /* MS_DOSView.h in Headers */,
 				FE7507DC1B399A3C00EE4DFF /* ActionLetters.h in Headers */,
 				FE422ADD1B3AB09900DFDD0E /* ActionTimeToWait.h in Headers */,
@@ -168,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE84CE091B395D13002F8B16 /* ms_dos-config.xml in Resources */,
+				FEF0203C1B3AE2B100F0E706 /* Glass_TTY_VT220.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,7 +196,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cp -r /Users/ludoviclaffineur/Library/Developer/Xcode/DerivedData/MS-DOS-evfjvjzibuszcffbwntviinsrzre/Build/Products/Debug/MS-DOS.saver ~/Library/Screen\\ Savers/";
+			shellScript = "cp -r /Users/ludoviclaffineur/Library/Developer/Xcode/DerivedData/MS-DOS-evfjvjzibuszcffbwntviinsrzre/Build/Products/Release/MS-DOS.saver /Library/Screen\\ Savers/";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -197,6 +208,7 @@
 				FE7507DD1B399A3C00EE4DFF /* ActionLetters.m in Sources */,
 				FE422ADA1B3AAD7C00DFDD0E /* Action.m in Sources */,
 				FE84CDFF1B39444F002F8B16 /* MS_DOSView.m in Sources */,
+				FEF020411B3AECB200F0E706 /* ActionTime.m in Sources */,
 				FE7507D51B397FEA00EE4DFF /* Screen.m in Sources */,
 				FE422ADE1B3AB09900DFDD0E /* ActionTimeToWait.m in Sources */,
 			);
@@ -245,7 +257,7 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					/usr/include/libxml2/,
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -286,7 +298,7 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					/usr/include/libxml2/,
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 			};
