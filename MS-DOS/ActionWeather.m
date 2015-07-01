@@ -146,7 +146,10 @@
                 TodayCondition =value;
             }
             else if ([key compare:@"temp"]==0) {
-                Temperature =value;
+                NSInteger TempInt =   [value intValue];
+                int a = (TempInt- 32) * 5.0/9.0;
+
+                Temperature =[NSString stringWithFormat:@"%d °C", a ];
             }
             else if ([key compare:@"date"]==0) {
                 Time =value;
