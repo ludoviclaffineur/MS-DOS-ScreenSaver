@@ -24,7 +24,7 @@
     <timetowait delay="15" />
     <clearscreen />
     <letters tblMin="0" tblMax="0">640 KB OK</letters>
-    <timetowait delay="1" />
+    <timetowait delay="40" />
     <clearscreen />
     <letters tblMin="0" tblMax="0">Toaster-BIOS v1.3.02.P0100137 3/25/94 rev A-A1</letters><crlf />
     <timetowait delay="10" />
@@ -54,27 +54,91 @@
     <letters tblMin="0" tblMax="0">C:\></letters><cursor type="blinking" />
     <timetowait delay="20" />
     <letters tblMin="4" tblMax="10">TIME</letters><crlf />
-    <crlf />
+    <crlf /><timetowait delay="10" />
     <letters tblMin="0" tblMax="0">Current time is </letters><time /><crlf />
-    <crlf />
+    <crlf /><timetowait delay="10" />
     <timetowait delay="6" />
     <letters tblMin="0" tblMax="0">C:\></letters><cursor type="blinking" />
     <timetowait delay="20" />
     <letters tblMin="4" tblMax="10">TIME</letters><crlf />
-    <crlf />
+    <crlf /><timetowait delay="10" />
     <letters tblMin="0" tblMax="0">Current time is </letters><time /><crlf />
-    <crlf />
+    <crlf /><timetowait delay="10" />
     <timetowait delay="6" />
     <letters tblMin="0" tblMax="0">C:\></letters><cursor type="blinking" />
     <timetowait delay="20" />
     <letters tblMin="4" tblMax="10">TIME</letters><timetowait delay="10" />
     <delete number="1" /><timetowait delay="10" /><delete number="1" /><timetowait delay="10" /><delete number="1" /><timetowait delay="10" /><delete number="1" /><timetowait delay="10" />
     <letters tblMin="4" tblMax="10">DATE</letters><timetowait delay="10" /><crlf />
-    <crlf /><timetowait delay="1" />
-    <letters tblMin="0" tblMax="0">Current date is </letters><time /><crlf />
-    <crlf /><timetowait delay="1" />
-    <letters tblMin="0" tblMax="0">C:\></letters><cursor type="fixed" />
+    <crlf /><timetowait delay="10" />
+    <letters tblMin="0" tblMax="0">Current date is </letters><date /><crlf /><timetowait delay="10" />
+    <crlf /><timetowait delay="10" />
+    <letters tblMin="0" tblMax="0">C:\></letters><cursor type="fixed" /><timetowait delay="10" />
+    <letters tblMin="6" tblMax="15">BASSOON</letters><timetowait delay="10" /><crlf />
+    <timetowait delay="30" />
+    <letters tblMin="0" tblMax="0">                                     |</letters><timetowait delay="10" /><crlf />
+    <letters tblMin="0" tblMax="0">                                 `.</letters><timetowait delay="10" /><crlf />
+    <letters tblMin="0" tblMax="0">__________ ___________________    |</letters><timetowait delay="10" /><crlf />
+    <letters tblMin="0" tblMax="0">| o_ o-_O__|______o-.o,-o--o___|--'___ _______,,</letters><timetowait delay="10" /><crlf />
+    <letters tblMin="0" tblMax="0">|0-o o  "PG| o____,--'`-``==O=====o---|--o    ||</letters><timetowait delay="10" /><crlf />
+    <letters tblMin="0" tblMax="0">`---------- --------------------------'--____-''</letters><timetowait delay="10" /><crlf />
+    <timetowait delay="10" /><crlf />
+    <letters tblMin="0" tblMax="0">C:\></letters><cursor type="fixed" /><timetowait delay="10" />
+    <letters tblMin="6" tblMax="15">PONEY</letters><timetowait delay="10" /><crlf />
+    <letters tblMin="0" tblMax="0">                     ,, ,,, ,,,, ,,,,,,,,                            </letters><timetowait delay="10" /><crlf />
+    <letters tblMin="0" tblMax="0">          /\        /;; ;;;;;;;;;;;;;; ;;;/ ,;`.   ,,,,              </letters><timetowait delay="10" /><crlf />
+    <letters tblMin="0" tblMax="0">         ;  `-.    /// //////// /////  // ,','`;. ///;;;;,.          </letters><timetowait delay="5" /><crlf />
+    <letters tblMin="0" tblMax="0">        ,'   ,,`-.;;;;;; ;;;;;;; ;;;;// ,' ,'  `.`. ///;;//;,        </letters><timetowait delay="10" /><crlf />
+    <letters tblMin="0" tblMax="0">       ,'   ;;;//////// ////// ///////,'  ,'     ; : ;;// ;//,       </letters><timetowait delay="2" /><crlf />
+    <letters tblMin="0" tblMax="0">       `.  ;`;;;;;;;: ;;;;:;; ;:;:;;:;:  ,'     ,' : ;;;;;;;;/,      </letters><timetowait delay="7" /><crlf />
+    <letters tblMin="0" tblMax="0">        `. `; :!::::!;;;;;!::::!;!;;!;:  `.   ,'  ,'///!!;;;;;;      </letters><timetowait delay="10" /><crlf />
+    <letters tblMin="0" tblMax="0">          `._!!;!!!!;!!!!!;!!!!;!;!!;!!`.  `;'  ,'-.!!!//;;;////     </letters><timetowait delay="30" /><crlf />
+    <letters tblMin="0" tblMax="0">             ;   .   .               ,        ,'    ::-!_///;;;;     </letters><timetowait delay="2" /><crlf />
+    <letters tblMin="0" tblMax="0">           .' ,%'  ,%'     `%.   `%.;;   `%.   ;;   ,::  `! ////     </letters><timetowait delay="10" /><crlf />
+    <letters tblMin="0" tblMax="0">          .', '    '    `%,  `:.   `::.   ::  :;    %::    `! ;;     </letters><timetowait delay="1" /><crlf />
+    <letters tblMin="0" tblMax="0">         ,';;        `%, `;;.         `::. `.;;;    `:%   %:///      </letters><timetowait delay="2" /><crlf />
+    <letters tblMin="0" tblMax="0">        ,';;'  ;      ;;  `::;   `%,    ;%:.  ::     ::     %`!/     </letters><timetowait delay="5" /><crlf />
+    <letters tblMin="0" tblMax="0">      ,' ;.'  .%.    ;;    `;;     ;;   ' `;   %     ::    %  :      </letters><timetowait delay="3" /><crlf />
+    <letters tblMin="0" tblMax="0">      :  `;;  %%%    `::   ;;     ;;;      `    `    ::     % `      </letters><timetowait delay="10" /><crlf />
+    <letters tblMin="0" tblMax="0">      ;    ' .%%'  `%  ;   '  ,., `;;         `%,   ::'   %::%       </letters><timetowait delay="7" /><crlf />
+    <letters tblMin="0" tblMax="0">     ;`. `.  %%%%   ;;   .___;;;;  '     `:    `;   ::     :::       </letters><timetowait delay="4" /><crlf />
+    <letters tblMin="0" tblMax="0">     : :  ;  %%%%   ;: ,:' _ `.`.        ;;;   ;;   `::    :::.      </letters><timetowait delay="2" /><crlf />
+    <letters tblMin="0" tblMax="0">     `.;  ;  `%%'  ;;' :: (0) ; :       ::'    ;      ::   `:::      </letters><timetowait delay="20" /><crlf />
+    <letters tblMin="0" tblMax="0">      ,' ;'  %%'  ;;'  ;;.___,',;       ;;    ;;       ;   ,:::      </letters><timetowait delay="1" /><crlf />
+    <letters tblMin="0" tblMax="0">     ,  ;'  :%:   ;;  ,'------''      ;;;'  .;;            :::'      </letters><timetowait delay="40" /><crlf />
+    <letters tblMin="0" tblMax="0">    ,' ;;   ;%;   ;;  '             ::'    ,;;;            :::       </letters><timetowait delay="1" /><crlf />
+    <letters tblMin="0" tblMax="0">    :  :'   :%:   `;             ;;;;'      ;;             ::%       </letters><timetowait delay="2" /><crlf />
+    <letters tblMin="0" tblMax="0">    :  ;;   :%'   ;;   ;...,,;;''         ;;'    ;     ;   :::       </letters><timetowait delay="1" /><crlf />
+    <letters tblMin="0" tblMax="0">    ;  `;   ::   ;;' ,:::'     .        .;;     ,'    ;;   `;;       </letters><timetowait delay="2" /><crlf />
+    <letters tblMin="0" tblMax="0">    ;  ;'   :: .;;' ,:::'   ,::%.      ;;;    ,'     ;;    ,;;       </letters><timetowait delay="10" /><crlf />
+    <letters tblMin="0" tblMax="0">    : ;;.  .:' ;;' ,:::' ;;:::' ;;    ;;'    ,'    ;;;    ;;;'       </letters><timetowait delay="2" /><crlf />
+    <letters tblMin="0" tblMax="0">     :`;;  ::  ;;  ;;;' '  .    ;;    '  _,-'     ;;;     `;'        </letters><timetowait delay="1" /><crlf />
+    <letters tblMin="0" tblMax="0">     : ;' .:'  ;; .::: ,%'`;   ;;;   _,-'       .;;;'     ;'         </letters><timetowait delay="1" /><crlf />
+    <letters tblMin="0" tblMax="0">    ,' ;; ;;  ;;' :::' ,, .;  ;;  _,' ;      ,;;;'     ,;;'          </letters><timetowait delay="2" /><crlf />
+    <letters tblMin="0" tblMax="0">   .'~~~~~~~~~._ ,;' ,',' ;;  ',-'   ,'    ,';;       ;;;'   ;;;     </letters><timetowait delay="3" /><crlf />
+    <letters tblMin="0" tblMax="0"> ,'             `-.,' .'  ;; ,'     ,' ;;;;;;'       ,;;    ;;;      </letters><timetowait delay="1" /><crlf />
+    <letters tblMin="0" tblMax="0">.';           .    `.,   ;; ,'      ;              ,;;%    ;;;       </letters><timetowait delay="2" /><crlf />
+    <letters tblMin="0" tblMax="0">: ..       _.';     ;   '_,'       .'       ,,,,,,,%;;'    `;;;      </letters><timetowait delay="1" /><crlf />
+    <letters tblMin="0" tblMax="0">`.  .     (_.' .  ;'  ,-'          :  ,,,,,;;;;;;;;;'      .;;;      </letters><timetowait delay="1" /><crlf />
+    <letters tblMin="0" tblMax="0">  `-._        ___,' ,'             :.."""""`````'        ,;;;;       </letters><timetowait delay="15" /><crlf />
+    <letters tblMin="0" tblMax="0">      `------'____.'               :                   ..;;;;        </letters><timetowait delay="10" /><crlf />
+    <letters tblMin="0" tblMax="0">         `---'                     `.               ..;;;;'          </letters><timetowait delay="3" /><crlf />
+    <letters tblMin="0" tblMax="0">                                    :......:::::::::;;;;'            </letters><timetowait delay="1" /><crlf />
+    <letters tblMin="0" tblMax="0">                                     :::::::::::::::;'      ,;;;     </letters><timetowait delay="7" /><crlf />
+    <letters tblMin="0" tblMax="0">                                      ;                   ;;;;'      </letters><timetowait delay="2" /><crlf />
+    <letters tblMin="0" tblMax="0">                                      ;                 .;;;;        </letters><timetowait delay="1" /><crlf />
+    <letters tblMin="0" tblMax="0">                                    ,'...:::::.        ;;;'          </letters><timetowait delay="8" /><crlf />
+    <letters tblMin="0" tblMax="0">                                   .'          `;;;;;;''             </letters><timetowait delay="3" /><crlf />
+    <letters tblMin="0" tblMax="0">                                   ;                                 </letters><timetowait delay="6" /><crlf />
+    <letters tblMin="0" tblMax="0">                                   `----------------------------     </letters><timetowait delay="20" /><crlf />
+    <letters tblMin="0" tblMax="0">C:\></letters><timetowait delay="1" />
+    <timetowait delay="20" />
+    <letters tblMin="6" tblMax="15">WEATHER</letters><timetowait delay="10" /><crlf />
+    <weather /><crlf /><timetowait delay="100" />
+    <letters tblMin="0" tblMax="0">C:\></letters><timetowait delay="1" />
+    <timetowait delay="100" />
     <letters tblMin="6" tblMax="15">REBOOT</letters><timetowait delay="10" /><crlf />
     <timetowait delay="30" />
+
     <loop />
 </text>

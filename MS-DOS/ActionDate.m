@@ -6,10 +6,10 @@
 //  Copyright (c) 2015 Ludovic Laffineur. All rights reserved.
 //
 
-#import "ActionTime.h"
+#import "ActionDate.h"
 
 
-@implementation ActionTime{
+@implementation ActionDate{
     int currentDelay ;
     NSLocale* currentLocale;
 }
@@ -30,15 +30,12 @@
     if (!done){
         NSDate *today = [NSDate dateWithTimeIntervalSinceNow:0];
         NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
-        [dateFormat setDateFormat:@"hh:mm:ssa"];
+        [dateFormat setDateStyle:NSDateFormatterShortStyle];
         NSString *dateString = [dateFormat stringFromDate:today];
-        //NSLog(@"Time: %@", dateString);
+        //NSLog(@"Date: %@", dateString);
         [screen addString:dateString];
         done = YES;
     }
 }
-
-
-
 
 @end

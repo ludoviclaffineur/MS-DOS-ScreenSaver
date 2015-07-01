@@ -11,6 +11,8 @@
 #import "ActionLetters.h"
 #import "ActionTimeToWait.h"
 #import "ActionTime.h"
+#import "ActionDate.h"
+#import "ActionWeather.h"
 
 @implementation MS_DOSView{
     xmlDocPtr doc;
@@ -71,6 +73,7 @@
     }
     /* parse the file, activating the DTD validation option */
     doc = xmlCtxtReadFile(ctxt, filename, NULL, XML_PARSE_DTDVALID);
+    
     /* check if parsing suceeded */
     if (doc == NULL) {
         fprintf(stderr, "Failed to parse %s\n", filename);
@@ -210,6 +213,17 @@
     else if (strcmp(current_element->name, "time")==0)
     {
         currentAction = [[ActionTime alloc]init];
+        //[self getNextCommand];
+    }
+    else if (strcmp(current_element->name, "date")==0)
+    {
+        currentAction = [[ActionDate alloc]init];
+        //[self getNextCommand];
+    }
+    else if (strcmp(current_element->name, "weather")==0)
+    {
+        currentAction = [[ActionWeather alloc]initWithScreen:screen];
+        //[screen addString:@"ADDING WEATHER"];
         //[self getNextCommand];
     }
     else if (strcmp(current_element->name, "delete")==0)

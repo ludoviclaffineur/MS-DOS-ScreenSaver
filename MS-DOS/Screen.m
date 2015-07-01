@@ -26,7 +26,7 @@
 - (id) initWithFrame:(NSRect) frame{
     self = [self init];
     self->frame = frame;
-    nbrLineMax = frame.size.height / 32.0;
+    nbrLineMax = frame.size.height / 37.0;
     return self;
 }
 
@@ -73,7 +73,7 @@
         NSMutableString* s = [[self linesOnScreen]objectAtIndex:i];
         styleText = [[NSAttributedString alloc] initWithString:s attributes:attribute];
         /* free up the resulting document */
-        [styleText drawAtPoint:CGPointMake(0, frame.size.height-(32.0*(i+1)))];
+        [styleText drawAtPoint:CGPointMake(0, frame.size.height-(37.0*(i+1)))];
     }
 }
 

@@ -11,6 +11,12 @@
 		FE422ADA1B3AAD7C00DFDD0E /* Action.m in Sources */ = {isa = PBXBuildFile; fileRef = FE422AD91B3AAD7C00DFDD0E /* Action.m */; };
 		FE422ADD1B3AB09900DFDD0E /* ActionTimeToWait.h in Headers */ = {isa = PBXBuildFile; fileRef = FE422ADB1B3AB09900DFDD0E /* ActionTimeToWait.h */; };
 		FE422ADE1B3AB09900DFDD0E /* ActionTimeToWait.m in Sources */ = {isa = PBXBuildFile; fileRef = FE422ADC1B3AB09900DFDD0E /* ActionTimeToWait.m */; };
+		FE5791501B43ECDE00E2E27E /* ActionDate.h in Headers */ = {isa = PBXBuildFile; fileRef = FE57914E1B43ECDE00E2E27E /* ActionDate.h */; };
+		FE5791511B43ECDE00E2E27E /* ActionDate.m in Sources */ = {isa = PBXBuildFile; fileRef = FE57914F1B43ECDE00E2E27E /* ActionDate.m */; };
+		FE5791541B43FD1500E2E27E /* ActionWeather.h in Headers */ = {isa = PBXBuildFile; fileRef = FE5791521B43FD1500E2E27E /* ActionWeather.h */; };
+		FE5791551B43FD1500E2E27E /* ActionWeather.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5791531B43FD1500E2E27E /* ActionWeather.m */; };
+		FE73C9E81B44138700028CCB /* XMLReader.h in Headers */ = {isa = PBXBuildFile; fileRef = FE73C9E61B44138700028CCB /* XMLReader.h */; };
+		FE73C9E91B44138700028CCB /* XMLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = FE73C9E71B44138700028CCB /* XMLReader.m */; };
 		FE7507D31B397FA800EE4DFF /* Screen.h in Headers */ = {isa = PBXBuildFile; fileRef = FE7507D21B397FA800EE4DFF /* Screen.h */; };
 		FE7507D51B397FEA00EE4DFF /* Screen.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7507D41B397FEA00EE4DFF /* Screen.m */; };
 		FE7507DC1B399A3C00EE4DFF /* ActionLetters.h in Headers */ = {isa = PBXBuildFile; fileRef = FE7507D81B399A3C00EE4DFF /* ActionLetters.h */; };
@@ -29,6 +35,12 @@
 		FE422AD91B3AAD7C00DFDD0E /* Action.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Action.m; sourceTree = "<group>"; };
 		FE422ADB1B3AB09900DFDD0E /* ActionTimeToWait.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionTimeToWait.h; sourceTree = "<group>"; };
 		FE422ADC1B3AB09900DFDD0E /* ActionTimeToWait.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionTimeToWait.m; sourceTree = "<group>"; };
+		FE57914E1B43ECDE00E2E27E /* ActionDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionDate.h; sourceTree = "<group>"; };
+		FE57914F1B43ECDE00E2E27E /* ActionDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionDate.m; sourceTree = "<group>"; };
+		FE5791521B43FD1500E2E27E /* ActionWeather.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionWeather.h; sourceTree = "<group>"; };
+		FE5791531B43FD1500E2E27E /* ActionWeather.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionWeather.m; sourceTree = "<group>"; };
+		FE73C9E61B44138700028CCB /* XMLReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMLReader.h; path = "../../../Downloads/XMLReader-master/XMLReader.h"; sourceTree = "<group>"; };
+		FE73C9E71B44138700028CCB /* XMLReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XMLReader.m; path = "../../../Downloads/XMLReader-master/XMLReader.m"; sourceTree = "<group>"; };
 		FE7507D21B397FA800EE4DFF /* Screen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Screen.h; sourceTree = "<group>"; };
 		FE7507D41B397FEA00EE4DFF /* Screen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Screen.m; sourceTree = "<group>"; };
 		FE7507D81B399A3C00EE4DFF /* ActionLetters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionLetters.h; sourceTree = "<group>"; };
@@ -90,6 +102,12 @@
 				FE422ADC1B3AB09900DFDD0E /* ActionTimeToWait.m */,
 				FEF0203E1B3AECB200F0E706 /* ActionTime.h */,
 				FEF0203F1B3AECB200F0E706 /* ActionTime.m */,
+				FE57914E1B43ECDE00E2E27E /* ActionDate.h */,
+				FE57914F1B43ECDE00E2E27E /* ActionDate.m */,
+				FE5791521B43FD1500E2E27E /* ActionWeather.h */,
+				FE5791531B43FD1500E2E27E /* ActionWeather.m */,
+				FE73C9E61B44138700028CCB /* XMLReader.h */,
+				FE73C9E71B44138700028CCB /* XMLReader.m */,
 				FE84CDFA1B39444F002F8B16 /* Supporting Files */,
 			);
 			path = "MS-DOS";
@@ -112,9 +130,12 @@
 			files = (
 				FE422AD71B3AA92300DFDD0E /* Action.h in Headers */,
 				FE7507D31B397FA800EE4DFF /* Screen.h in Headers */,
+				FE5791501B43ECDE00E2E27E /* ActionDate.h in Headers */,
+				FE5791541B43FD1500E2E27E /* ActionWeather.h in Headers */,
 				FEF020401B3AECB200F0E706 /* ActionTime.h in Headers */,
 				FE84CDFD1B39444F002F8B16 /* MS_DOSView.h in Headers */,
 				FE7507DC1B399A3C00EE4DFF /* ActionLetters.h in Headers */,
+				FE73C9E81B44138700028CCB /* XMLReader.h in Headers */,
 				FE422ADD1B3AB09900DFDD0E /* ActionTimeToWait.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -205,12 +226,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE5791551B43FD1500E2E27E /* ActionWeather.m in Sources */,
 				FE7507DD1B399A3C00EE4DFF /* ActionLetters.m in Sources */,
+				FE73C9E91B44138700028CCB /* XMLReader.m in Sources */,
 				FE422ADA1B3AAD7C00DFDD0E /* Action.m in Sources */,
 				FE84CDFF1B39444F002F8B16 /* MS_DOSView.m in Sources */,
 				FEF020411B3AECB200F0E706 /* ActionTime.m in Sources */,
 				FE7507D51B397FEA00EE4DFF /* Screen.m in Sources */,
 				FE422ADE1B3AB09900DFDD0E /* ActionTimeToWait.m in Sources */,
+				FE5791511B43ECDE00E2E27E /* ActionDate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
