@@ -11,6 +11,7 @@
 @implementation Screen{
     int currentLine;;
     NSRect frame;
+    int maxWidth;
 }
 
 @synthesize linesOnScreen;
@@ -21,17 +22,22 @@
     linesOnScreen = [[NSMutableArray alloc] init];
     [linesOnScreen addObject:[[NSMutableString alloc] init]];
     nbrLineMax = 24;
+    maxWidth=50;
     return self;
 }
 - (id) initWithFrame:(NSRect) frame{
     self = [self init];
     self->frame = frame;
     nbrLineMax = frame.size.height / 37.0;
+    maxWidth = frame.size.width / 16.3;
     return self;
 }
 
 - (void) addChar:(char)theLine{
     NSMutableString* lastLine = [linesOnScreen lastObject];
+    if ([lastLine length] > maxWidth) {
+        [self newLine];
+    }
     [lastLine appendString:[NSString stringWithFormat:@"%c",theLine]];
 }
 

@@ -13,6 +13,7 @@
 #import "ActionTime.h"
 #import "ActionDate.h"
 #import "ActionWeather.h"
+#import "ActionNews.h"
 
 @implementation MS_DOSView{
     xmlDocPtr doc;
@@ -231,6 +232,12 @@
         [screen deleteChar];
         //[self getNextCommand];
     }
+    else if (strcmp(current_element->name, "news")==0)
+    {
+        currentAction = [[ActionNews alloc]initWithScreen:screen];
+        //[self getNextCommand];
+    }
+
 
 
 

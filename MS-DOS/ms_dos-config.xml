@@ -131,16 +131,23 @@
     <letters tblMin="0" tblMax="0">                                   .'          `;;;;;;''             </letters><timetowait delay="3" /><crlf />
     <letters tblMin="0" tblMax="0">                                   ;                                 </letters><timetowait delay="6" /><crlf />
     <letters tblMin="0" tblMax="0">                                   `----------------------------     </letters><timetowait delay="20" /><crlf />
-    <letters tblMin="0" tblMax="0">C:\></letters><timetowait delay="1" />
+    <letters tblMin="0" tblMax="0">C:\></letters><timetowait delay="1" /><cursor type="blinking" />
     <timetowait delay="20" />
     <letters tblMin="6" tblMax="15">WEATHER</letters><timetowait delay="10" /><crlf />
+    <cursor type="hidden" />
     <weather /><crlf />
     <letters tblMin="0" tblMax="2">closing connection</letters>
     <letters tblMin="3" tblMax="5">......</letters><crlf />
     <timetowait delay="20" />
-    <letters tblMin="0" tblMax="0">C:\></letters><timetowait delay="1" />
+    <letters tblMin="0" tblMax="0">C:\></letters><timetowait delay="1" /><cursor type="blinking" />
+    <timetowait delay="20" />
+    <letters tblMin="6" tblMax="15">NEWS</letters><timetowait delay="10" /><crlf />
+    <news /><crlf />
+    <timetowait delay="30" />
+    <letters tblMin="0" tblMax="0">C:\></letters><timetowait delay="1" /><cursor type="blinking" />
     <timetowait delay="100" />
     <letters tblMin="6" tblMax="15">REBOOT</letters><timetowait delay="10" /><crlf />
+    <cursor type="fixed" />
     <timetowait delay="30" />
 
     <loop />

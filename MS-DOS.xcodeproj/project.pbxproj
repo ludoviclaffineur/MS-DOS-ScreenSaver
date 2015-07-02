@@ -28,6 +28,8 @@
 		FEF0203C1B3AE2B100F0E706 /* Glass_TTY_VT220.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FEF0203B1B3AE29400F0E706 /* Glass_TTY_VT220.ttf */; };
 		FEF020401B3AECB200F0E706 /* ActionTime.h in Headers */ = {isa = PBXBuildFile; fileRef = FEF0203E1B3AECB200F0E706 /* ActionTime.h */; };
 		FEF020411B3AECB200F0E706 /* ActionTime.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF0203F1B3AECB200F0E706 /* ActionTime.m */; };
+		FEF76CD41B452478000AC763 /* ActionNews.h in Headers */ = {isa = PBXBuildFile; fileRef = FEF76CD21B452478000AC763 /* ActionNews.h */; };
+		FEF76CD51B452478000AC763 /* ActionNews.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF76CD31B452478000AC763 /* ActionNews.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +56,8 @@
 		FEF0203B1B3AE29400F0E706 /* Glass_TTY_VT220.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Glass_TTY_VT220.ttf; sourceTree = "<group>"; };
 		FEF0203E1B3AECB200F0E706 /* ActionTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionTime.h; sourceTree = "<group>"; };
 		FEF0203F1B3AECB200F0E706 /* ActionTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionTime.m; sourceTree = "<group>"; };
+		FEF76CD21B452478000AC763 /* ActionNews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionNews.h; sourceTree = "<group>"; };
+		FEF76CD31B452478000AC763 /* ActionNews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionNews.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				FE57914F1B43ECDE00E2E27E /* ActionDate.m */,
 				FE5791521B43FD1500E2E27E /* ActionWeather.h */,
 				FE5791531B43FD1500E2E27E /* ActionWeather.m */,
+				FEF76CD21B452478000AC763 /* ActionNews.h */,
+				FEF76CD31B452478000AC763 /* ActionNews.m */,
 				FE73C9E61B44138700028CCB /* XMLReader.h */,
 				FE73C9E71B44138700028CCB /* XMLReader.m */,
 				FE84CDFA1B39444F002F8B16 /* Supporting Files */,
@@ -132,6 +138,7 @@
 				FE7507D31B397FA800EE4DFF /* Screen.h in Headers */,
 				FE5791501B43ECDE00E2E27E /* ActionDate.h in Headers */,
 				FE5791541B43FD1500E2E27E /* ActionWeather.h in Headers */,
+				FEF76CD41B452478000AC763 /* ActionNews.h in Headers */,
 				FEF020401B3AECB200F0E706 /* ActionTime.h in Headers */,
 				FE84CDFD1B39444F002F8B16 /* MS_DOSView.h in Headers */,
 				FE7507DC1B399A3C00EE4DFF /* ActionLetters.h in Headers */,
@@ -235,6 +242,7 @@
 				FE7507D51B397FEA00EE4DFF /* Screen.m in Sources */,
 				FE422ADE1B3AB09900DFDD0E /* ActionTimeToWait.m in Sources */,
 				FE5791511B43ECDE00E2E27E /* ActionDate.m in Sources */,
+				FEF76CD51B452478000AC763 /* ActionNews.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
