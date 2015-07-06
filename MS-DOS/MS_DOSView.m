@@ -222,8 +222,18 @@
         //[self getNextCommand];
     }
     else if (strcmp(current_element->name, "weather")==0)
+        
     {
-        currentAction = [[ActionWeather alloc]initWithScreen:screen];
+        xmlAttr* attribute = current_element->properties;
+        NSString* woied=0;
+        xmlChar* value = xmlNodeListGetString(current_element->doc, attribute->children, 1);
+        //do something with value
+        // [screen addString:[NSString stringWithFormat:@"%s",value ]];
+        if (strcmp(attribute->name, "woied")==0) {
+            woied = [NSString stringWithFormat:@"%s", value];
+        }
+
+        currentAction = [[ActionWeather alloc]initWithScreen:screen andWoied:woied];
         //[screen addString:@"ADDING WEATHER"];
         //[self getNextCommand];
     }
@@ -234,7 +244,15 @@
     }
     else if (strcmp(current_element->name, "news")==0)
     {
-        currentAction = [[ActionNews alloc]initWithScreen:screen];
+        xmlAttr* attribute = current_element->properties;
+        NSString* URL=0;
+        xmlChar* value = xmlNodeListGetString(current_element->doc, attribute->children, 1);
+        //do something with value
+        // [screen addString:[NSString stringWithFormat:@"%s",value ]];
+        if (strcmp(attribute->name, "url")==0) {
+            URL = [NSString stringWithFormat:@"%s", value];
+        }
+        currentAction = [[ActionNews alloc]initWithScreen:screen andUrl:URL];
         //[self getNextCommand];
     }
 

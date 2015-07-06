@@ -40,20 +40,45 @@
     return self;
 }
 
--(id) initWithScreen:(Screen*)screen{
+-(id) initWithScreen:(Screen*)screen andUrl:(NSString*)_Url{
 
     self = [super init];
-    maxPost = 10;
+    maxPost = 5;
     isTitle = NO;
     loaded = NO;
     isItem = NO;
     loadingCycle =0;
     Posts = [[NSMutableArray alloc]init];
-    [screen addString:@"Connecting Weather Distant Server."];
+    [screen addString:@"Connecting News Distant Server."];
     self->screen = screen;
     dispatch_async( dispatch_get_global_queue(0, 0), ^{
 
-        [self parseDocumentWithURL:[NSURL URLWithString:@"http://rss.feedsportal.com/c/864/f/11087/index.rss" ]];
+        //[self parseDocumentWithURL:[NSURL URLWithString:@"http://rss.feedsportal.com/c/864/f/11087/index.rss" ]];
+        //[self parseDocumentWithURL:[NSURL URLWithString:@"http://hackaday.com/feed/"]];
+        [self parseDocumentWithURL:[NSURL URLWithString:_Url]];
+        // call the result handler block on the main queue (i.e. main thread)
+
+    });
+    
+    return self;
+}
+
+-(id) initWithScreen:(Screen*)screen{
+
+    self = [super init];
+    maxPost = 5;
+    isTitle = NO;
+    loaded = NO;
+    isItem = NO;
+    loadingCycle =0;
+    Posts = [[NSMutableArray alloc]init];
+    [screen addString:@"Connecting News Distant Server."];
+    self->screen = screen;
+    dispatch_async( dispatch_get_global_queue(0, 0), ^{
+
+        //[self parseDocumentWithURL:[NSURL URLWithString:@"http://rss.feedsportal.com/c/864/f/11087/index.rss" ]];
+        [self parseDocumentWithURL:[NSURL URLWithString:@"http://hackaday.com/feed/"]];
+
         // call the result handler block on the main queue (i.e. main thread)
 
     });
@@ -172,9 +197,9 @@
 
     }
     else if ([elementName compare:@"title"]== 0) {
-        if (title ){
+        //if (isItem ){
             self->isTitle = YES;
-        }
+        //}
 
 
     }

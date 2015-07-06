@@ -55,6 +55,25 @@
     return self;
 }
 
+-(id) initWithScreen:(Screen*)screen andWoied:(NSString*)woied{
+    self = [super init];
+    loaded = NO;
+    [screen addString:@"Connecting Weather Distant Server."];
+    self->screen = screen;
+    NSMutableString* URL = [[NSMutableString alloc]init];
+    [URL appendString:@"https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20weather.forecast%20where%20woeid%20in%20("];
+    [URL appendString:woied];
+    [URL appendString:@")&format=xml&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys"];
+    dispatch_async( dispatch_get_global_queue(0, 0), ^{
+
+        [self parseDocumentWithURL:[NSURL URLWithString:URL ]];
+        // call the result handler block on the main queue (i.e. main thread)
+
+    });
+
+    return self;
+}
+
 -(id) initWithIdCity: (NSString*) woeid {
     self = [self init];
     self->woeid = woeid;
@@ -78,9 +97,9 @@
         else{
             [screen addChar:'.'];
             loadingCycle++;
-            if(loadingCycle>40){
+            if(loadingCycle>4){
                 [screen newLine];
-                actionLetter =[[ActionLetters alloc]initWithString:@"Impossible to connect to the server... Trying to dial up.................. abort." timeBetweenLetterMin:0 timeBetweenLetterMax:3 andCursorState:0];
+                actionLetter =[[ActionLetters alloc]initWithString:@"Trying to dial up.................. abort." timeBetweenLetterMin:0 timeBetweenLetterMax:3 andCursorState:0];
                 xmlparser = nil;
                 loaded = YES;
             }

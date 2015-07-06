@@ -23,6 +23,7 @@
 }
 
 -(BOOL)parseDocumentWithURL:(NSURL *)url;
+-(id) initWithScreen:(Screen*)screen andWoied:(NSString*)_Url;
 - (id) initWithIdCity:(NSString*) woied;
 - (id) initWithScreen:(Screen*) screen;
 
